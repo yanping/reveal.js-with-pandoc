@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>这是标题</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">   
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- For Customized Design-->
+    <link rel="stylesheet" href="css/custom.css">
+    
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+    
+    
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>这是标题</h1>
+          					<p>
+						Created by 作者姓名
+					</p>
+          <p><small>日期</small></p>
+				</section>
+
+				<section id="第一张幻灯片" class="level2">
+    <h2>第一张幻灯片</h2>
+    <p>可以支持中文。请看列表</p>
+    <ul>
+    <li>第一项</li>
+    <li>第二项
+    <ul>
+    <li><a href="http://google.com">Google</a></li>
+    <li>还可以在<a href="http://rvl.io">http://rvl.io</a>上在线编辑slides</li>
+    </ul></li>
+    <li>第三项</li>
+    </ul>
+    </section>
+    <section id="section" class="level2">
+    <h2></h2>
+    <p>可以没有标题</p>
+    <figure>
+    <img src="fig/html5.png" alt="img" /><figcaption>img</figcaption>
+    </figure>
+    </section>
+    <section id="表格" class="level2">
+    <h2>表格</h2>
+    <table>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">name</th>
+    <th style="text-align: left;">type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: left;">张三</td>
+    <td style="text-align: left;">好人</td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">李四</td>
+    <td style="text-align: left;">坏人</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>表格的样式我放在/css/custom.css里了</p>
+    </section>
+    <section id="变量" class="level2">
+    <h2>变量</h2>
+    <p>下面两个是可以在命令行中定义的变量</p>
+    <ul>
+    <li>theme</li>
+    <li>transition</li>
+    </ul>
+    <p>以linux下的shell脚步为例：</p>
+    <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> -t html5 --template=template-revealjs.html \
+        <span class="kw">--standalone</span> --section-divs \
+      <span class="kw">--variable</span> theme=<span class="st">&quot;beige&quot;</span> \
+      <span class="kw">--variable</span> transition=<span class="st">&quot;linear&quot;</span> \
+      <span class="kw">slides.md</span> -o slides.html</code></pre>
+    <p>windows下的情况请看本项目repo中的<a href="https://github.com/yanping/reveal.js-with-pandoc/blob/master/build.bat">bat文件</a></p>
+    </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || "default", // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || "cube", // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
