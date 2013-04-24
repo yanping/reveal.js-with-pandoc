@@ -15,11 +15,21 @@
     - 还可以在[http://rvl.io](http://rvl.io)上在线编辑slides
 * 第三项
 
+## 第二张幻灯片
+
+尝试逐项出现条目
+
+<ul>
+<li class="fragment">第一项</li>
+<li class="fragment">第二项</li>
+</ul>
+
+
 ##
 
 可以没有标题
 
-![img](fig/html5.png)
+![图片说明](fig/html5.png)
 
 ## 表格
 
