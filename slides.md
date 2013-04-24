@@ -25,8 +25,8 @@
 
 | name | type |
 |------|------|
-| 张三 | 好人 |
-| 李四 | 坏人 |
+| 张三 | 好人  |
+| 李四 | 坏人  |
 
 
 表格的样式我放在/css/custom.css里了
@@ -50,4 +50,4 @@ pandoc -t html5 --template=template-revealjs.html \
   slides.md -o slides.html
 ```
 
-windows下的情况请看本项目repo中的[bat文件](https://github.com/yanping/reveal.js-with-pandoc/blob/master/build.bat)
+windows下的情况请看本项目repo中的[bat文件](https://github.com/yanping/reveal.js-with-pandoc/blob/gh-pages/build.bat)

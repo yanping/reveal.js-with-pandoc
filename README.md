@@ -10,7 +10,7 @@ reveal.js的说明请看[这里](https://github.com/hakimel/reveal.js/blob/maste
 - `slides.md`  示例文件
 - `/css/custom.css` 用户自定义的样式文件
 
-`index.html`是原版的演示文件，`slides.md`是我的示例文件，编译之后为`slides.html`，点[这里](https://github.com/yanping/reveal.js-with-pandoc.git)查看效果
+`index.html`是原版的演示文件，`slides.md`是我的示例文件，编译之后为`slides.html`，点[这里](http://yanping.me/reveal.js-with-pandoc/slides.html)查看效果
 
 ## 使用方法
 
