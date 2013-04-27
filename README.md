@@ -34,6 +34,13 @@ pandoc -t html5 --template=template-revealjs.html --standalone --section-divs   
 - `theme` 可选的reveal.js主题有："sky", "beige", "simple","serif", "night", "default"
 - `transition` 可选的slides切换方式有："default", "cube","page", "concave", "zoom", "linear", "fade", "none"
 
+如果slides里有公式，需要在编译命令里加上`--mathml`选项
+
+```
+pandoc -t html5 --template=template-revealjs.html --mathml --standalone --section-divs   --variable theme="sky"   --variable transition="cube" slides.md -o slides.html
+```
+暂时只实现了用*MathML*来实现数学公式，其他方法还在摸索中。
+
 ## 其他
 
 可以在<http://rvl.io>上在线编辑reveal.js的slides

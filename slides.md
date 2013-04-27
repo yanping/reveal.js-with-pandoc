@@ -13,7 +13,7 @@
 * 第二项
     - [Google](http://google.com)
     - 还可以在[http://rvl.io](http://rvl.io)上在线编辑slides
-* 第三项
+* 第三项 数学公式 $\frac{x^2}{2}$
 
 ## 第二张幻灯片
 
